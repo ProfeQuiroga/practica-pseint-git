@@ -12,4 +12,15 @@ SubProceso MostrarInventario()
 		escribir "Precio Libros Nuevos"
 		escribir " Precio Lapices"
 FinSubProceso
-	
+
+SubProceso CalcularTotal(Monto)
+Definir total Como Real
+// Si el monto es mayor a 100 descuentale un 10 porciento sino el monto total queda igual
+
+Si monto > 100 Entonces
+total <- monto * 0,90
+SiNo
+	total <- monto
+FinSi
+Escribir "El total a pagar es: $", total
+FinSubproceso
