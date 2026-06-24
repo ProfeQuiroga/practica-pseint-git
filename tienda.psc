@@ -1,4 +1,4 @@
-Algoritmo tienda_modular
+Algoritmo TiendaModular
 	definir opcion como entero 
 	Repetir
 		escribir ""
